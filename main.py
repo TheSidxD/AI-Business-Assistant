@@ -957,7 +957,12 @@ class CheckoutOrder(BaseModel):
     payment: str = "UPI"
     upi_id: str = ""
     utr: str = ""
+card_holder_name: str = ""
+card_last4: str = ""
 
+emi_provider: str = ""
+emi_tenure: str = ""
+emi_reference: str = ""
     # IMPORTANT:
     # Cart is sent using product IDs, so checkout
     # never depends on product-name matching.
