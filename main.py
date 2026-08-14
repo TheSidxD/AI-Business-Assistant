@@ -963,6 +963,8 @@ card_last4: str = ""
 emi_provider: str = ""
 emi_tenure: str = ""
 emi_reference: str = ""
+
+cart: dict[str, int] = {}
     # IMPORTANT:
     # Cart is sent using product IDs, so checkout
     # never depends on product-name matching.
